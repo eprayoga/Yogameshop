@@ -30,7 +30,7 @@ export default function Home() {
           content="Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati"
         />
         <meta property="og:image" content="https://" />
-        <meta property="og:url" content="https://" />
+        <meta property="og:url" content="https://yogameshop.vercel.app" />
       </Head>
       <Navbar />
       <MainBanner />
