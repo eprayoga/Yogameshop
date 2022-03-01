@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useState } from "react";
+import Head from "next/head";
 import Footer from "../../components/organisms/Footer";
 import Navbar from "../../components/organisms/Navbar";
 import TopUpForm from "../../components/organisms/TopUpForm";
@@ -23,6 +24,23 @@ export default function Detail({ dataItem, nominals, payments }: DetailProps) {
   }, []);
   return (
     <>
+      <Head>
+        <title>Top Up - {dataItem.name}</title>
+        <meta
+          name="description"
+          content="Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati"
+        />
+        <meta property="og:title" content={`Top Up - ${dataItem.name}`} />
+        <meta
+          property="og:description"
+          content="Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati"
+        />
+        <meta
+          property="og:image"
+          content="https://yogameshop.vercel.app/img/Header-1.png"
+        />
+        <meta property="og:url" content="https://yogameshop.vercel.app" />
+      </Head>
       <Navbar />
       <section className="detail pt-lg-60 pb-50">
         <div className="container-xxl container-fluid">

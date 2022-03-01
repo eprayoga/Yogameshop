@@ -1,13 +1,22 @@
-import jwtDecode from "jwt-decode";
+import Head from "next/head";
 import SideBar from "../../../components/organisms/SideBar";
 import TransactionContent from "../../../components/organisms/TransactionContent";
 
 export default function Transaction() {
   return (
-    <section className="transactions overflow-auto">
-      <SideBar activeMenu="transactions" />
-      <TransactionContent />
-    </section>
+    <>
+      <Head>
+        <title>Dashboard - Transaction</title>
+        <meta
+          name="description"
+          content="Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati"
+        />
+      </Head>
+      <section className="transactions overflow-auto">
+        <SideBar activeMenu="transactions" />
+        <TransactionContent />
+      </section>
+    </>
   );
 }
 

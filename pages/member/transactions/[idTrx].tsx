@@ -1,3 +1,4 @@
+import Head from "next/head";
 import TransactionDetailContent from "../../../components/organisms/TransactionDetailContent";
 import {
   HistoryTransactionTypes,
@@ -13,9 +14,18 @@ interface TransactionsDetailProps {
 export default function TransactionsDetail(props: TransactionsDetailProps) {
   const { transactionDetail } = props;
   return (
-    <section className="transactions-detail overflow-auto">
-      <TransactionDetailContent data={transactionDetail} />
-    </section>
+    <>
+      <Head>
+        <title>Transaction Detail</title>
+        <meta
+          name="description"
+          content="Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati"
+        />
+      </Head>
+      <section className="transactions-detail overflow-auto">
+        <TransactionDetailContent data={transactionDetail} />
+      </section>
+    </>
   );
 }
 

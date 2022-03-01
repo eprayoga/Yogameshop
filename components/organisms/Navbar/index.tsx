@@ -11,11 +11,12 @@ export default function Navbar() {
           <a className="navbar-brand" href="/">
             <Image src="/icon/logo.svg" width={60} height={60} />
           </a>
+          <div className="navbar-brand-text">Yogameshop</div>
           <ToggleMenu />
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
               <Menu title="Home" active href="/" />
-              <Menu title="Games" href="#gameFeatured" />
+              <Menu title="Games" />
               <Menu title="Reward" />
               <Menu title="Discover" />
               <Menu title="Global Rank" />

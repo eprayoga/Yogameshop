@@ -1,14 +1,24 @@
 import jwtDecode from "jwt-decode";
+import Head from "next/head";
 import OverviewContent from "../../components/organisms/OverviewContent";
 import SideBar from "../../components/organisms/SideBar";
 import { JWTPayloadTypes, UserTypes } from "../../services/data-types";
 
 export default function Member() {
   return (
-    <section className="overview overflow-auto">
-      <SideBar activeMenu="overview" />
-      <OverviewContent />
-    </section>
+    <>
+      <Head>
+        <title>Dashboard</title>
+        <meta
+          name="description"
+          content="Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati"
+        />
+      </Head>
+      <section className="overview overflow-auto">
+        <SideBar activeMenu="overview" />
+        <OverviewContent />
+      </section>
+    </>
   );
 }
 

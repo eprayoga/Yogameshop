@@ -29,7 +29,10 @@ export default function Home() {
           property="og:description"
           content="Kami menyediakan jutaan cara untuk membantu players menjadi pemenang sejati"
         />
-        <meta property="og:image" content="https://" />
+        <meta
+          property="og:image"
+          content="https://yogameshop.vercel.app/img/Header-1.png"
+        />
         <meta property="og:url" content="https://yogameshop.vercel.app" />
       </Head>
       <Navbar />

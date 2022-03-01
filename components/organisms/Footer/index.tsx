@@ -100,7 +100,7 @@ export default function Footer() {
                   <ul className="list-unstyled">
                     <li className="mb-6">
                       <a
-                        href="mailto: hi@store.gg"
+                        href="mailto: hi@Yogameshop.gg"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         hi@Yogameshop.gg
@@ -108,7 +108,7 @@ export default function Footer() {
                     </li>
                     <li className="mb-6">
                       <a
-                        href="mailto: team@store.gg"
+                        href="mailto: team@yogameshop.gg"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         team@yogameshop.gg
@@ -116,8 +116,7 @@ export default function Footer() {
                     </li>
                     <li className="mb-6">
                       <a
-                        href="http://maps.google.com/?q=Pasific 12,
-                                        Jakarta Selatan"
+                        href="http://maps.google.com/?q=Kadungora, Garut"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Kadungora 44153, Garut
