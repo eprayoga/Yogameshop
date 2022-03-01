@@ -200,6 +200,9 @@ footer ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  .navbar .navbar-brand-text {
+    display: none;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */

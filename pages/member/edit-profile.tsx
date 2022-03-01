@@ -142,7 +142,26 @@ export default function EditProfile() {
                     }
                   />
                 </div>
-
+                {uploaded > 0 ? (
+                  <div className="progress mt-5">
+                    <div
+                      className={
+                        uploaded === 100
+                          ? "progress-bar progress-bar-striped progress-bar-animated bg-success"
+                          : "progress-bar progress-bar-striped progress-bar-animated"
+                      }
+                      role="progressbar"
+                      style={{ width: `${uploaded}%` }}
+                      aria-valuenow={uploaded}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                    >
+                      {uploaded}%
+                    </div>
+                  </div>
+                ) : (
+                  <div></div>
+                )}
                 <div className="button-group d-flex flex-column pt-50">
                   <button
                     type="button"
@@ -157,26 +176,6 @@ export default function EditProfile() {
           </div>
         </main>
       </section>
-      {uploaded > 0 ? (
-        <div className="progress mt-5 fixed-top">
-          <div
-            className={
-              uploaded === 100
-                ? "progress-bar progress-bar-striped progress-bar-animated bg-success"
-                : "progress-bar progress-bar-striped progress-bar-animated"
-            }
-            role="progressbar"
-            style={{ width: `${uploaded}%` }}
-            aria-valuenow={uploaded}
-            aria-valuemin={0}
-            aria-valuemax={100}
-          >
-            {uploaded}%
-          </div>
-        </div>
-      ) : (
-        <div></div>
-      )}
     </>
   );
 }
