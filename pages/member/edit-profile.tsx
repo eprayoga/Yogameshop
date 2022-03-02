@@ -62,6 +62,7 @@ export default function EditProfile() {
       router.push("/sign-in");
     }
   };
+
   return (
     <>
       <Head>

@@ -42,7 +42,6 @@ export default function SignUpPhoto() {
       let uploadedProgress = localStorage.getItem("upload-progress");
       setUploaded(parseInt(uploadedProgress!));
     }, 500);
-    toast.info("Sedang melakukan upload, silahkan tunggu beberapa saat!");
     const getLocalForm = await localStorage.getItem("user-form");
     const form = JSON.parse(getLocalForm!);
     const data = new FormData();

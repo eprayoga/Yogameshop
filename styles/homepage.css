@@ -19,6 +19,12 @@
   padding: 0.75rem 1.875rem;
 }
 
+.navbar a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 .navbar .navbar-brand {
   font-weight: 700;
   display: flex;
@@ -29,6 +35,12 @@
   font-weight: 700;
   color: #0c145a;
   font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-brand-text {
+    display: none;
+  }
 }
 /*  */
 
@@ -193,23 +205,6 @@ footer ul li a:hover {
   color: #4d17e2;
   text-decoration: underline !important;
   background-color: transparent;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
-@media (max-width: 768px) {
-  .navbar .navbar-brand-text {
-    display: none;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  /* Header */
-
-  /*  */
 }
 
 /* Large devices (desktops, 992px and up) */

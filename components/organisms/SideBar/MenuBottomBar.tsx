@@ -1,5 +1,6 @@
 import cx from "classnames";
 import Link from "next/link";
+import Image from "next/image";
 
 interface MenuBottomBarProps {
   title: string;
@@ -24,7 +25,11 @@ export default function MenuBottomBar(props: Partial<MenuBottomBarProps>) {
     <div className={classItem}>
       <Link href={href}>
         <a>
-          <img src={`/icon/${icon}.svg`} alt="" />
+          {active ? (
+            <Image src={`/icon/${icon}-active.svg`} width={25} height={25} />
+          ) : (
+            <Image src={`/icon/${icon}.svg`} width={25} height={25} />
+          )}
           {title}
         </a>
       </Link>

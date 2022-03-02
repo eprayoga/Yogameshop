@@ -27,9 +27,15 @@ export default function MenuItem(props: Partial<MenuItemProps>) {
 
   return (
     <div className={classItem} onClick={onClick}>
-      <div className="me-3">
-        <Image src={`/icon/${icon}.svg`} width={25} height={25} />
-      </div>
+      {active ? (
+        <div className="me-3">
+          <Image src={`/icon/${icon}-active.svg`} width={25} height={25} />
+        </div>
+      ) : (
+        <div className="me-3">
+          <Image src={`/icon/${icon}.svg`} width={25} height={25} />
+        </div>
+      )}
       <p className="item-title m-0">
         {onClick ? (
           <a className="text-lg text-decoration-none">{title}</a>

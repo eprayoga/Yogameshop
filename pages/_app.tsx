@@ -16,7 +16,6 @@ import "../styles/edit-profile.css";
 import "../styles/navbar-log-in.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import NextNProgress from "nextjs-progressbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -52,7 +51,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <NextNProgress height={5} />
       <Component {...pageProps} />
       <ToastContainer />
     </>

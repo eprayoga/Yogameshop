@@ -31,7 +31,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://yogameshop.vercel.app/img/Header-1.png"
+          content="https://yogameshop.vercel.app/_next/image?url=%2Ficon%2Flogo.svg&w=64&q=75"
         />
         <meta property="og:url" content="https://yogameshop.vercel.app" />
       </Head>
