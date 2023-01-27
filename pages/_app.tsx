@@ -18,6 +18,10 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NextNProgress from "nextjs-progressbar";
+import { SkeletonTheme } from "react-loading-skeleton";
+
+import "react-loading-skeleton/dist/skeleton.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -51,8 +55,18 @@ function MyApp({ Component, pageProps }: AppProps) {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <Component {...pageProps} />
-      <ToastContainer />
+
+      <SkeletonTheme baseColor="#a3a3a3" highlightColor="#919191">
+        <NextNProgress
+          color="#4D17E2"
+          startPosition={0.5}
+          stopDelayMs={200}
+          height={3}
+          showOnShallow
+        />
+        <Component {...pageProps} />
+        <ToastContainer theme="colored" />
+      </SkeletonTheme>
     </>
   );
 }

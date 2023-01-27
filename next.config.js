@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['yogameshop.herokuapp.com']
-  }
-}
+    domains: ["yogameshop-server.up.railway.app"],
+  },
+};
